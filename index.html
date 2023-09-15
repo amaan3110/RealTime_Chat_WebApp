@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime  Chat Application</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <span><i class="fa-brands fa-rocketchat fa-2xl" style="color: #2fc32c;"></i></span>
+            <h2>talk<span>!</span>e</h2>
+        </div>
+        <div class="chat-section">
+            <div class="incoming message">
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="outgoing message">
+                <h4></h4>
+                <p></p>
+            </div>
+        </div>
+        <div class="send-msg">
+            <input type="text" placeholder="Write your message here.." id="input">
+            <button>Send</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
